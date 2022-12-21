@@ -3,6 +3,7 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    --botao-azul-efeito: #3C92FA;
     --fonte-principal: 'Inter';
 }
 
@@ -40,6 +41,11 @@ body {
     display: block;
     text-decoration: none;
     margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
 
 .botao_secundario {
@@ -91,4 +97,66 @@ body {
 .secundario__botao {
     display: inline-block;
     margin-top: 1em;
+}
+
+/* QUARTA SEÇÃO */
+/* REUTILIZAÇÃO DE ESTILIZAÇÃO */
+
+/* QUINTA SEÇÃO */
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* FOOTER */
+.rodape {
+    text-align: center;
+}
+
+.rodape__imagem {
+    margin-top: 3em;
+}   
+
+.rodape__lista {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    gap: 30px;
+    margin: 3em 0;
+    color: var(--branco-principal);
+}
+
+.rodape__lista a {
+    text-decoration: none;
+}
+
+.rodape__lista a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__lista a:active {
+    color: var(--cinza-secundario);
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    padding: 1em 15em;
+    line-height: 21px;
 }
