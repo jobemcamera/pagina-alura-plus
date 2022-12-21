@@ -61,7 +61,12 @@ body {
     margin: 1em 0 2em 0;
 }
 
-/* SEÇÃO SECUNDÁRIA */
+/* SEGUNDA SEÇÃO */
+.container__descricao {
+    padding: 2em;
+    width: 80%;
+}
+
 .secundario {
     align-items: center;
     margin: 0 10em;
@@ -80,4 +85,10 @@ body {
 
 .descricao__texto {
     color: var(--cinza-secundario);
+}
+
+/* TERCEIRA SEÇÃO */
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
 }
